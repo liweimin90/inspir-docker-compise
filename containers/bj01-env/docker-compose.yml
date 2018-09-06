@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  bj01-sim-env:
+    image: 49613b622b13
+    user: ue4
+    command: "/home/ue4/start.sh"
+    #command: "/bin/bash"
+    tty: true
+    ports:
+     - "10001:10001"
+     - "6100-6199:6100-6199"
+
